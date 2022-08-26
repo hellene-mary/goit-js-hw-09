@@ -31,3 +31,8 @@ img {
 .value {
     font-size: 40px;
 }
+
+label {
+    display: flex;
+    margin-bottom: 15px;
+}
