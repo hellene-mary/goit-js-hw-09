@@ -20,7 +20,7 @@ function onSubmitClick(event) {
 
   console.log(` delay: '${firstDelay}', step: '${step}', amount: '${amount}'`);
 
-  aaa(firstDelay, step, amount);
+  fulfillmentPromise(firstDelay, step, amount);
 
   event.currentTarget.reset();
 }
@@ -39,7 +39,7 @@ function createPromise(position, delay) {
   });
 }
 
-function aaa(firstDelay, step, amount) {
+function fulfillmentPromise(firstDelay, step, amount) {
   let delay = firstDelay;
   for (let i = 1; i <= amount; i += 1) {
     delay = firstDelay + step * (i - 1);
